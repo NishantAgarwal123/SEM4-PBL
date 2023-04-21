@@ -1,0 +1,128 @@
+#appl p {
+    margin-top: 0;
+}
+body{ 
+    background-color: black;
+    padding: 100px 100px;
+}
+
+.titlerow{
+    display:flex ;
+    height: 120%;
+    align-items: center;
+}
+.col1{
+    flex-basis: 50%;
+}
+.col2{
+    flex-basis: 50%;
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 100px;
+}
+h2{
+    font-size: 50px;
+}
+h3{
+    color: black;
+}
+
+button{
+
+    width: 500px;
+    font-size: 25px;
+    padding: 15px 0; 
+    text-align: center;
+    margin: 0px 0px;
+    border-radius: 10px; 
+    font-weight:900;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    z-index: 5;
+    cursor:default;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+
+    background: #009688;    
+    height: 100%;    
+    width: 0;    
+    border-radius: 10px; 
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    z-index: -1; 
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.cont ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+    font-size: 30px;
+}
+.cont ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cont ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+.cont ul li:hover:after{
+    width: 100%;
+} 
+
+.content{
+    font-size: 20px;
+}
+
+.box{
+    font-size: 22px; 
+}
+
+.EM{
+    width: 10%;
+    height:10%;
+    transition: width 2s, height 3.5s;
+}
+
+.EM:hover{
+    width: 100%;
+    height:100%;
+}
+
+.MM{
+    width: 10%;
+    height:10%;
+    transition: width 4s, height 2s;
+}
+/* .EMPATHY{
+    padding-top: 75PX;
+} */
+.MM:hover{
+    width: 100%;
+    height:100%;
+}
+footer{
+    padding-top: 50px;
+    text-align:center;
+}
